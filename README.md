@@ -219,3 +219,17 @@ Operations Agent
  ▼             ▼
 Server Cache  Data Source
 (Properties) (Google Sheets)
+
+---
+```
+## Confidentiality Notice
+
+This platform was developed for internal organizational use.
+
+Source code, production datasets, business rules, operational documentation, integrations, and connected resources are intentionally excluded from this repository due to confidentiality requirements.
+
+Screenshots have been redacted to protect proprietary information.
+
+This repository is intended to showcase the business problem, solution design, architecture, and measurable operational impact of the platform.
+
+---
