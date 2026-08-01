@@ -6,7 +6,7 @@ A centralized decision-support platform designed to help operations agents insta
 
 ## Overview
 
-Internal Compliance & Market Eligibility Decision Support Platform was built to solve a common operational challenge:
+The Internal Compliance & Market Eligibility Decision Support Platform was built to solve a common operational challenge.
 
 Agents were required to search across multiple compliance resources, documentation repositories, spreadsheets, help center articles, and regional guides to determine market-specific requirements.
 
@@ -34,7 +34,7 @@ Prior to implementation, agents often had to navigate multiple systems to answer
 - Are there region-specific onboarding requirements?
 - What time is it in the driver's market?
 
-Finding this information could involve consulting multiple documentation sources and operational references.
+Finding this information frequently involved consulting multiple documentation sources and operational references, increasing handling time and introducing opportunities for inconsistency.
 
 ---
 
@@ -45,15 +45,17 @@ The platform consolidates market requirements into a single searchable source of
 Agents simply enter a region code and immediately receive:
 
 - Market information
-- State/province information
-- Region type
-- Vehicle eligibility rules
+- State / Province information
+- Region classification
+- Vehicle eligibility requirements
 - Driver eligibility requirements
 - Insurance requirements
 - Inspection requirements
 - Driving history requirements
 - Regional onboarding requirements
 - Local market time
+
+The result is faster decision-making, improved operational consistency, and reduced dependence on fragmented documentation.
 
 ---
 
@@ -77,7 +79,7 @@ Review minimum driver age and driving history requirements.
 
 ### Regional Requirement Tracking
 
-Access special requirements unique to specific markets.
+Access region-specific criteria and onboarding requirements.
 
 ### Market Comparison Mode
 
@@ -85,11 +87,11 @@ Compare multiple regions side-by-side.
 
 ### Real-Time Local Clock
 
-Display the current time in the searched region across US and Canadian markets.
+Display current local time for US and Canadian regions.
 
 ### Intelligent Search Suggestions
 
-Autocomplete support helps users find regions quickly.
+Autocomplete support helps users locate regions quickly.
 
 ### Feedback Collection
 
@@ -97,17 +99,60 @@ Built-in feedback mechanism enables continuous improvement.
 
 ### Performance Optimization
 
-Server-side and client-side caching reduce lookup times and improve responsiveness.
+Server-side and client-side caching significantly reduce lookup times and improve responsiveness.
 
 ---
 
+## Business Value
+
+The platform transformed a multi-source research process into a single-search workflow.
+
+Instead of navigating multiple operational resources, agents can retrieve eligibility and compliance requirements instantly using a region code.
+
+Benefits include:
+
+- Reduced lookup effort
+- Faster decision making
+- Improved consistency across agents
+- Centralized operational knowledge
+- Reduced reliance on institutional knowledge
+- Enhanced onboarding support
+
+---
+
+## Screenshots
+
+### Search Interface
+
+Centralized search interface enabling agents to retrieve regional requirements using a single region code.
+
+![region-result](https://raw.githubusercontent.com/Mkhimer69/Internal-Compliance-Market-Eligibility-Decision-Support-Platform/refs/heads/main/screenshots/search-interface.png)
+
+---
+
+### Region Results
+
+Unified presentation of market-specific eligibility and compliance information.
+
+![region-result](https://raw.githubusercontent.com/Mkhimer69/Internal-Compliance-Market-Eligibility-Decision-Support-Platform/refs/heads/main/screenshots/region-result.png)
+---
+
+### Comparison Mode
+
+Side-by-side comparison capability for evaluating multiple regions simultaneously.
+
+![comparison-mode](https://raw.githubusercontent.com/Mkhimer69/Internal-Compliance-Market-Eligibility-Decision-Support-Platform/refs/heads/main/screenshots/comparison-mode.png)
+
 ## Impact
 
-### Adoption
+### Adoption Metrics
 
-- 187 active users
-- 3,726 executions within a 7-day period
-- 0.03% error rate
+| Metric | Value |
+|----------|----------|
+| Active Users | 187 |
+| Weekly Executions | 3,726 |
+| Error Rate | 0.03% |
+| Status | Production |
 
 ### Operational Benefits
 
@@ -140,10 +185,11 @@ Server-side and client-side caching reduce lookup times and improve responsivene
 
 ### Additional Capabilities
 
-- Dynamic search suggestions
-- Region comparison engine
-- Timezone conversion
-- Feedback collection workflow
+- Dynamic Search Suggestions
+- Region Comparison Engine
+- Timezone Conversion
+- Feedback Collection Workflow
+- Performance Optimization Layer
 
 ---
 
@@ -155,6 +201,8 @@ Server-side and client-side caching reduce lookup times and improve responsivene
 | 1.5 | Region comparison, live timezone display |
 | 1.0 | Initial market eligibility and compliance lookup platform |
 
+---
+
 ## Architecture
 
 ```text
@@ -165,6 +213,7 @@ Operations Agent
         │
         ▼
  Client-Side Cache
+(Local Storage)
         │
         ▼
  Google Apps Script
@@ -172,5 +221,4 @@ Operations Agent
  ┌──────┴──────┐
  ▼             ▼
 Server Cache  Data Source
-(Properties)  (Google Sheets)
-
+(Properties) (Google Sheets)
