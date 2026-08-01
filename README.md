@@ -147,6 +147,14 @@ Server-side and client-side caching reduce lookup times and improve responsivene
 
 ---
 
+## Version History
+
+| Version | Highlights |
+|----------|------------|
+| 2.0 | Autocomplete, feedback system, server/client caching, enhanced UI |
+| 1.5 | Region comparison, live timezone display |
+| 1.0 | Initial market eligibility and compliance lookup platform |
+
 ## Architecture
 
 ```text
@@ -165,3 +173,4 @@ Operations Agent
  ▼             ▼
 Server Cache  Data Source
 (Properties)  (Google Sheets)
+
